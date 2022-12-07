@@ -1,0 +1,47 @@
+@import url('header.css');
+@import url('menu.css');
+@import url('main.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+}
+
+:root{
+    --first-color-text: rgb(0, 0, 0);
+    --second-color-text: rgb(112, 112, 112);
+    --special-color-text: rgb(232, 6, 139);
+
+    --button-hover-color: rgb(255, 197, 231);
+
+    --background-color: rgb(255, 255, 255);
+    --background-color-products: rgb(241, 241, 241);
+
+    --font: 'Roboto', sans-serif;
+
+    font-size: 62.5%;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background-color);
+    color: var(--first-color-text);
+
+    font-family: var(--font);
+    font-size: 1.8rem;
+}
+
+button{
+    background: transparent;
+}
+
+button:hover{
+    cursor: pointer;
+}
+

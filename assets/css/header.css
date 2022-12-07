@@ -1,0 +1,169 @@
+/*HEADER*/
+.header{
+    width: 100%;
+    padding-block: 2.8rem;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    margin-inline: auto;
+}
+
+.header__logo--desktop{
+    width: 45rem;
+}
+
+.header__search{
+    border: .3rem solid var(--first-color-text);
+    border-radius: .75rem;
+
+    font-size: 2rem;
+
+    padding: 2rem;
+
+    width: 30%;
+}
+
+.header__search:focus{
+    outline: none;
+    border: .3rem solid var(--special-color-text);
+}
+
+.header__search::placeholder{
+    background: url('../img/lupa.png') no-repeat right / contain;
+
+    color: var(--second-color-text);
+
+    font-size: 2rem;
+}
+
+.header__login--desktop{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: baseline;
+}
+
+.header__paragraph{
+    grid-column: span 2;
+    
+    font-size: 2.4rem;
+}
+
+.header__link--coracao{
+    margin-right: 1.8rem;
+}
+
+.header__logo--mobile, .header__login-mobile, .header__button--openmenu{
+    display: none;
+}
+
+/*NAVIGATION*/
+.header__navigation{
+    padding-block: 2.6rem;
+}
+
+.navigation__lista{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+
+.navigation__ver-tudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigation__link{
+    color: var(--first-color-text);
+    
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+.navigation__link:hover{
+    border-bottom: .2rem dotted var(--first-color-text);
+}
+
+.special-link{
+    color: var(--special-color-text);
+}
+
+.special-link:hover{
+    border-bottom: .2rem dotted var(--special-color-text);
+}
+
+@media screen and (max-width: 1500px) {
+    .header__content{
+        padding-inline: 2.6rem;
+        
+        width: 100%;
+    }
+
+    .header__logo--desktop{
+        width: 30rem;
+    }
+
+    .header__search{
+        width: 35%;
+        font-size: 1.6rem;
+    }
+
+    .header__paragraph{
+        font-size: 1.8rem;
+    }
+
+    .header__search::placeholder, .header__login--paragraph{
+        font-size: 1.4rem;
+    }
+
+    .header__navigation{
+        padding-inline: 2.6rem;
+    }
+    
+    .navigation__link{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .header__logo--desktop{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .header__logo--desktop{
+        display: none;
+    }
+
+    .header__logo--mobile{
+        display: block;
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .header__logo--mobile-link{
+        flex: 1;
+    }
+
+    .header__navigation, .header__link--coracao, .header__link--sacola, .header__login--desktop{
+        display: none;
+    }
+
+    .header__button--openmenu{
+        display: block;
+    }
+
+    .header__search{
+        display: none;
+    }
+}

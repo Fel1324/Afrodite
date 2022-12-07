@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial | Afrodite</title>
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <a href="#!"><h1><img class="header__logo--desktop" src="assets/img/logo-desktop.png" alt="logo Afrodite desktop"></h1></a>
+                <a class="header__logo--mobile-link" href="#!"><img class="header__logo--mobile" src="assets/img/logo-mobile.png" alt="logo Afrodite mobile"></a>
+
+                <input class="header__search" type="search" placeholder="Oi, o que você procura hoje? :)">
+
+                <div class="header__login--desktop">
+                    <p class="header__paragraph">Oie!</p>
+                    <p class="header__login--paragraph">Vem fazer seu login ;)</p>
+                    <button class="header__button--login" aria-label="fazer login"><img src="assets/img/botao-login.png" alt></button>
+                </div>
+
+                <a class="header__login-mobile" href="#!">Fazer login</a>
+
+                <div>
+                    <a class="header__link--coracao" href="#!" aria-label="Ir para seus favoritos"><img src="assets/img/coracao-icone.png" alt></a>
+                    <a class="header__link--sacola" href="#!" aria-label="Ir para sua sacola"><img src="assets/img/sacola-icone.png" alt></a>
+                </div>
+
+                <button onclick="openMenu()" class="header__button--openmenu" aria-label="Abrir menu lateral"><img src="assets/img/menu.png" alt></button>
+            </div>
+
+            <nav class="header__navigation">
+                <ul class="navigation__lista">
+                    <li class="navigation__item">
+                        <a href="#!" class="navigation__ver-tudo navigation__link">
+                            <img src="assets/img/menu.png" alt="Ver todos os produtos">
+                            <p class="navigation__paragraph">Ver tudo</p>
+                        </a>
+                    </li>
+
+                    <li class="navigation__item"><a href="#!" class="navigation__link special-link">Perfumes importados</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Dermocosméticos</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Cabelos</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Maquiagem</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Tratamentos</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Marcas</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Cupons</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Brindes</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link special-link">Black Friday</a></li>
+                    <li class="navigation__item"><a href="#!" class="navigation__link">Atendimento</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="menu">
+            <div class="menu__wrapper">
+                <div class="menu__header">
+                    <a href="#!"><img class="menu__logo" src="assets/img/logo-mobile.png" alt="logo Afrodite mobile"></a>
+                    <button onclick="closeMenu()" class="menu__button--closemenu" aria-label="Abrir menu lateral"><img src="assets/img/menu.png" alt></button>
+                </div>
+
+                <input class="menu__search" type="search" placeholder="Pesquisar produto :)">
+
+                <div class="menu__pessoal">
+                    <a class="menu__coracao" href="#!" aria-label="Ir para seus favoritos"><img src="assets/img/coracao-icone.png" alt></a>
+                    <a class="menu__sacola" href="#!" aria-label="Ir para sua sacola"><img src="assets/img/sacola-icone.png" alt></a>
+                    <a class="menu__login" href="#!"><p>Vem fazer seu login ;)</p></a>
+                </div>
+                
+                <div class="menu__content">
+                    <ul class="menu__lista">
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Ver tudo</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link special-link">Perfumes importados</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Dermocosméticos</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Cabelos</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Maquiagem</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Tratamentos</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Marcas</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Cupons</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Brindes</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link special-link">Black Friday</a></li>
+                        <li class="navigation__item"><a href="#!" class="navigation__link">Atendimento</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="main__wrapper">
+                <div class="main__banner">
+                    <img class="header__gif" src="assets/img/gif-do-perfume-com-fundo.gif" alt>
+                </div>
+
+                <div class="main__content">
+                    <div class="main__products">
+                        <a href="#!" class="main__perfume">
+                            <img class="main__img-perfume" src="assets/img/perfume1.png" alt="Perfume Lancôme" lang="fr">
+                        </a>
+                        <button class="main__favorite"><img src="assets/img/coracao-icone.png" alt></button>
+
+                        <a class="main__options" href="#!">+2 Opções</a>
+                        <h3 class="main__name">Lancôme</h3>
+                        <p class="main__desc">
+                            Idôle L'Intense Lancôme - Perfume Feminino - ...
+                        </p>
+
+                        <div class="main__stars">
+                            <img src="assets/img/cincoestrela.png" alt="Produto com 5 estrelas">
+                            <p class="main__stars-number">(87)</p>
+                        </div>
+
+                        <p class="main__previous-price">R$ 399,00</p>
+                        <h2 class="main__price">R$ 296,95</h2>
+                        <p class="main__installment">7x de R$ 42,42</p>
+                    </div>
+
+                    <div class="main__products">
+                        <a href="#!" class="main__perfume">
+                            <img class="main__img-perfume" src="assets/img/perfume2.png" alt="Perfume Yves Saint Laurent" lang="fr">
+                        </a>
+                        <button class="main__favorite"><img src="assets/img/coracao-icone.png" alt></button>
+
+                        <a class="main__options" href="#!">+2 Opções</a>
+                        <h3 class="main__name">Yves Saint Laurent</h3>
+                        <p class="main__desc">
+                            Y Yves Saint Laurent Perfume Masculino EDT
+                        </p>
+
+                        <div class="main__stars">
+                            <img src="assets/img/cincoestrela.png" alt="Produto com 5 estrelas">
+                            <p class="main__stars-number">(128)</p>
+                        </div>
+
+                        <p class="main__previous-price">R$ 489,00</p>
+                        <h2 class="main__price">R$ 299,00</h2>
+                        <p class="main__installment">7x de R$ 42,71</p>
+                    </div>
+
+                    <div class="main__products">
+                        <a href="#!" class="main__perfume">
+                            <img class="main__img-perfume" src="assets/img/perfume3.png" alt="Perfume Dior" lang="fr">
+                        </a>
+                        <button class="main__favorite"><img src="assets/img/coracao-icone.png" alt></button>
+                        
+                        <a class="main__options hidden" href="#!">+2 Opções</a>
+                        <h3 class="main__name">Dior</h3>
+                        <p class="main__desc">
+                            Escale à Portofino Dior - Perfume Unissex - Eau z...
+                        </p>
+
+                        <div class="main__stars">
+                            <img src="assets/img/quatroestrela.png" alt="Produto com 5 estrelas">
+                            <p class="main__stars-number">(36)</p>
+                        </div>
+
+                        <p class="main__previous-price">R$ 539,00</p>
+                        <h2 class="main__price">R$ 299,00</h2>
+                        <p class="main__installment">7x de R$ 42,71</p>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="main__social-links">
+                <a href="#!" target="_blank"><img src="assets/img/zap.png" alt="Ir para rede social WhatsApp do site"></a>
+                <a href="#!" target="_blank"><img src="assets/img/face.png" alt="Ir para rede social Facebook do site"></a>
+                <a href="#!" target="_blank"><img src="assets/img/insta.png" alt="Ir para rede social Instagram do site"></a>
+            </div>
+        </main>
+
+        <script src="assets/js/menu.js"></script>
+    </body>
+</html>
